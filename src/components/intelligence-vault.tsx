@@ -1,4 +1,3 @@
-import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { Lock, Sparkles, Bell, ArrowRight, ShieldCheck, BarChart3 } from 'lucide-react'
 

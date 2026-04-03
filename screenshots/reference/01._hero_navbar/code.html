@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PAINEL DE CONTRATOS - A Soberana do Compliance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#2a2a2a",
+              "inverse-primary": "#7e5700",
+              "tertiary": "#c9e6ff",
+              "primary": "#ffddaa",
+              "on-secondary-fixed": "#281900",
+              "tertiary-container": "#8ecdfd",
+              "secondary-container": "#8b6000",
+              "on-error-container": "#ffdad6",
+              "surface": "#131313",
+              "on-tertiary": "#00344e",
+              "on-error": "#690005",
+              "on-primary-fixed": "#281900",
+              "secondary-fixed": "#ffdeac",
+              "surface-variant": "#353534",
+              "outline": "#9c8f7d",
+              "on-tertiary-fixed-variant": "#004b70",
+              "on-primary": "#432c00",
+              "tertiary-fixed": "#cae6ff",
+              "on-secondary-container": "#ffe4bf",
+              "inverse-on-surface": "#313030",
+              "surface-bright": "#3a3939",
+              "surface-tint": "#f4bd5e",
+              "secondary": "#f5bd5e",
+              "error": "#ffb4ab",
+              "on-background": "#e5e2e1",
+              "tertiary-fixed-dim": "#8ecdfd",
+              "surface-dim": "#131313",
+              "on-primary-container": "#6e4c00",
+              "on-secondary": "#432c00",
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-surface": "#e5e2e1",
+              "primary-fixed-dim": "#f4bd5e",
+              "on-tertiary-container": "#005781",
+              "secondary-fixed-dim": "#f5bd5e",
+              "on-primary-fixed-variant": "#5f4100",
+              "surface-container-low": "#1c1b1b",
+              "error-container": "#93000a",
+              "primary-fixed": "#ffdeac",
+              "on-surface": "#e5e2e1",
+              "on-tertiary-fixed": "#001e2f",
+              "outline-variant": "#4f4537",
+              "on-secondary-fixed-variant": "#604100",
+              "on-surface-variant": "#d3c4b1",
+              "surface-container-highest": "#353534",
+              "background": "#131313",
+              "surface-container": "#201f1f"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-gold-gradient {
+        background: linear-gradient(135deg, #F4BD5E 0%, #B9882E 100%);
+      }
+      .obsidian-glow {
+        background: radial-gradient(circle at 50% -20%, #2A2A2A 0%, #0E0E0E 70%);
+      }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary/30">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full h-16 z-50 bg-neutral-900/75 backdrop-blur-xl border-b border-white/5 shadow-2xl shadow-black/50 font-['Manrope'] antialiased tracking-tight">
+<div class="flex items-center justify-between px-8 w-full max-w-screen-2xl mx-auto h-full">
+<!-- Brand Logo -->
+<div class="text-xl font-bold tracking-tighter text-amber-400 dark:text-amber-400">
+                PAINEL DE CONTRATOS
+            </div>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-amber-400 font-semibold border-b-2 border-amber-400 pb-1" href="#">Visão Geral</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#">Arquivos</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#">Segurança</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#">Suporte</a>
+</div>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<button class="bg-gold-gradient text-on-primary px-5 py-2 rounded-lg font-semibold text-sm active:scale-95 transition-transform hover:opacity-90">
+                    Solicitar Acesso
+                </button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="relative pt-16 min-h-screen obsidian-glow overflow-hidden">
+<!-- Hero Section -->
+<section class="relative max-w-screen-2xl mx-auto px-8 pt-24 pb-32 md:pt-32 md:pb-48 flex flex-col items-start">
+<!-- Signature Divider -->
+<div class="w-6 h-0.5 bg-primary mb-12"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Hero Copy -->
+<div class="lg:col-span-7 space-y-8">
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface leading-[1.1]">
+                        Gestão de contratos <br/>
+<span class="text-primary-fixed-dim">sem planilha, sem ruído.</span>
+</h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Acesse a infraestrutura definitiva para governança jurídica. Monitore prazos, audite cláusulas e centralize o ciclo de vida dos seus ativos contratuais em uma abóbada digital de alta fidelidade.
+                    </p>
+<div class="flex flex-wrap gap-6 pt-4">
+<button class="bg-gold-gradient text-on-primary px-8 py-4 rounded-lg font-bold text-base shadow-xl shadow-primary/10 hover:shadow-primary/20 transition-all active:scale-95 flex items-center gap-2">
+                            Começar Agora
+                            <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+<button class="border border-outline-variant/20 text-primary px-8 py-4 rounded-lg font-bold text-base hover:bg-white/5 transition-all active:scale-95 flex items-center gap-2">
+                            Agendar Demonstração
+                        </button>
+</div>
+</div>
+<!-- Hero Visual Element -->
+<div class="lg:col-span-5 relative group">
+<div class="absolute -inset-1 bg-gradient-to-tr from-primary/20 to-transparent blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container-low border border-outline-variant/10 shadow-3xl">
+<img alt="Digital Vault Visual" class="w-full h-full object-cover grayscale opacity-80 mix-blend-luminosity hover:mix-blend-normal hover:grayscale-0 transition-all duration-700" data-alt="Close-up of premium fountain pen resting on a dark, minimalist contract document with dramatic low-key lighting and gold accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRMxM49LT2y-GkCUK1lPF6TFzFS8w001u3gZT8kZ-YwEnNPSRdGZ-4v_TtIIaBIqVvSk9fhESGOdncoTCf_SliDOmRs-7F4whvN0-wMv6nHKzlR-mzRtkZqCRoYTfA0m1FrqE4LU1MwNDwA7gtkiwCEGZFiRAikzYkImrUqDZR21Riq3TDcTkPkid7rAfRYdThde3LdhIi3AicrsR2ok0NMBFheA8kGFZfmAQ3YQtrW2kw9Xb7chDS3tVkdqCOmEKNCH4_j3od7qax"/>
+<!-- Floating Data Points (Bento Style) -->
+<div class="absolute bottom-6 left-6 right-6 p-4 bg-surface-container-high/80 backdrop-blur-md rounded border border-white/5 space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-xs font-medium text-on-surface-variant uppercase tracking-widest">Status da Abóbada</span>
+<span class="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]"></span>
+</div>
+<div class="flex gap-4">
+<div class="flex-1 h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary w-3/4"></div>
+</div>
+<div class="flex-1 h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/2"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section (Editorial Style) -->
+<section class="border-t border-white/5 bg-surface-container-lowest py-16">
+<div class="max-w-screen-2xl mx-auto px-8">
+<p class="text-xs font-semibold text-neutral-500 uppercase tracking-[0.3em] mb-10">Confiado por Instituições de Elite</p>
+<div class="flex flex-wrap gap-12 md:gap-24 items-center opacity-40 grayscale contrast-125">
+<span class="text-xl font-bold tracking-tighter">FINANCEIRA.CORE</span>
+<span class="text-xl font-bold tracking-tighter">LEGAL.MIND</span>
+<span class="text-xl font-bold tracking-tighter">VANTAGE.GLOBAL</span>
+<span class="text-xl font-bold tracking-tighter">PRIME.EQUITY</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-white/5 bg-[#0E0E0E] font-['Inter'] text-sm text-neutral-500">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-screen-2xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="text-lg font-bold text-amber-400">
+                    PAINEL DE CONTRATOS
+                </div>
+<p>© 2024 PAINEL DE CONTRATOS. Todos os direitos reservados.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-neutral-500 hover:text-amber-400 transition-colors opacity-80 hover:opacity-100" href="#">Termos</a>
+<a class="text-neutral-500 hover:text-amber-400 transition-colors opacity-80 hover:opacity-100" href="#">Privacidade</a>
+<a class="text-neutral-500 hover:text-amber-400 transition-colors opacity-80 hover:opacity-100" href="#">Compliance</a>
+</div>
+</div>
+</footer>
+</body></html>

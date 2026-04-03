@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/manrope";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Fontes — Obsidian Vault */
+  --font-display: 'Manrope Variable', sans-serif;
+  --font-body: 'Inter Variable', sans-serif;
+  --font-sans: 'Inter Variable', sans-serif;
+  --font-heading: 'Manrope Variable', sans-serif;
+
+  /* Superfícies */
+  --color-surface-lowest: #0e0e0e;
+  --color-surface-low: #1c1b1b;
+  --color-surface: #201f1f;
+  --color-surface-high: #2a2a2a;
+  --color-surface-bright: #3a3939;
+
+  /* Dourado */
+  --color-primary: #f4bd5e;
+  --color-primary-container: #b9882e;
+  --color-primary-fixed: #ffdeac;
+
+  /* Outline */
+  --color-outline-variant: #4f4537;
+
+  /* Texto */
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #938f8d;
+  --color-on-primary: #1a1200;
+
+  /* Terciário */
+  --color-tertiary: #7ab9e8;
+
+  /* shadcn compat — mapeamento para tokens genéricos */
+  --color-background: var(--color-surface-lowest);
+  --color-foreground: var(--color-on-surface);
+  --color-card: var(--color-surface);
+  --color-card-foreground: var(--color-on-surface);
+  --color-popover: var(--color-surface);
+  --color-popover-foreground: var(--color-on-surface);
+  --color-primary-foreground: var(--color-on-primary);
+  --color-secondary: var(--color-surface-high);
+  --color-secondary-foreground: var(--color-on-surface);
+  --color-muted: var(--color-surface-high);
+  --color-muted-foreground: var(--color-on-surface-variant);
+  --color-accent: var(--color-surface-high);
+  --color-accent-foreground: var(--color-on-surface);
+  --color-destructive: #ef4444;
+  --color-border: var(--color-outline-variant);
+  --color-input: var(--color-outline-variant);
+  --color-ring: var(--color-primary);
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 1.75rem;
+  --radius-4xl: 2rem;
+
+  /* Sidebar/Chart — manter para shadcn */
+  --color-sidebar-ring: var(--color-primary);
+  --color-sidebar-border: var(--color-outline-variant);
+  --color-sidebar-accent-foreground: var(--color-on-surface);
+  --color-sidebar-accent: var(--color-surface-high);
+  --color-sidebar-primary-foreground: var(--color-on-primary);
+  --color-sidebar-primary: var(--color-primary);
+  --color-sidebar-foreground: var(--color-on-surface);
+  --color-sidebar: var(--color-surface-low);
+  --color-chart-5: #4f4537;
+  --color-chart-4: #938f8d;
+  --color-chart-3: #b9882e;
+  --color-chart-2: #f4bd5e;
+  --color-chart-1: #ffdeac;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-surface-lowest text-on-surface font-body antialiased;
+  }
+  html {
+    @apply font-sans;
+  }
+}

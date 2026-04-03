@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PAINEL DE CONTRATOS | Gestão Jurídica de Alta Performance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#604100",
+              "secondary-container": "#8b6000",
+              "outline": "#9c8f7d",
+              "error": "#ffb4ab",
+              "background": "#131313",
+              "on-error-container": "#ffdad6",
+              "surface-container": "#201f1f",
+              "on-primary": "#432c00",
+              "surface-container-highest": "#353534",
+              "surface-container-lowest": "#0e0e0e",
+              "outline-variant": "#4f4537",
+              "secondary-fixed-dim": "#f5bd5e",
+              "on-tertiary-fixed-variant": "#004b70",
+              "surface-container-low": "#1c1b1b",
+              "error-container": "#93000a",
+              "on-surface-variant": "#d3c4b1",
+              "primary-container": "#f4bd5e",
+              "surface-variant": "#353534",
+              "on-tertiary-fixed": "#001e2f",
+              "tertiary-fixed-dim": "#8ecdfd",
+              "tertiary": "#c9e6ff",
+              "primary-fixed": "#ffdeac",
+              "surface-container-high": "#2a2a2a",
+              "on-tertiary": "#00344e",
+              "inverse-on-surface": "#313030",
+              "on-secondary-fixed": "#281900",
+              "inverse-primary": "#7e5700",
+              "tertiary-fixed": "#cae6ff",
+              "on-secondary": "#432c00",
+              "on-tertiary-container": "#005781",
+              "inverse-surface": "#e5e2e1",
+              "on-error": "#690005",
+              "on-primary-fixed-variant": "#5f4100",
+              "tertiary-container": "#8ecdfd",
+              "primary": "#ffddaa",
+              "on-secondary-container": "#ffe4bf",
+              "on-primary-container": "#6e4c00",
+              "primary-fixed-dim": "#f4bd5e",
+              "surface-dim": "#131313",
+              "on-background": "#e5e2e1",
+              "on-surface": "#e5e2e1",
+              "secondary-fixed": "#ffdeac",
+              "surface-tint": "#f4bd5e",
+              "surface-bright": "#3a3939",
+              "secondary": "#f5bd5e",
+              "surface": "#131313",
+              "on-primary-fixed": "#281900"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #f4bd5e 0%, #b9882e 100%);
+        }
+        .signature-divider {
+            width: 24px;
+            height: 2px;
+            background-color: #f4bd5e;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #e5e2e1;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full h-16 z-50 bg-neutral-900/75 backdrop-blur-xl border-b border-white/5 shadow-2xl shadow-black/50">
+<div class="flex items-center justify-between px-8 w-full max-w-screen-2xl mx-auto h-full font-['Manrope'] antialiased tracking-tight">
+<div class="text-xl font-bold tracking-tighter text-amber-400 dark:text-amber-400">
+                PAINEL DE CONTRATOS
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-amber-400 font-semibold border-b-2 border-amber-400 pb-1 transition-all" href="#">Visão Geral</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#features">Arquivos</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#">Segurança</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#">Suporte</a>
+</div>
+<button class="primary-gradient text-on-primary px-6 py-2 rounded-lg font-semibold active:scale-95 transition-transform">
+                Solicitar Acesso
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="pt-40 pb-32 px-8 max-w-screen-2xl mx-auto flex flex-col items-center text-center">
+<span class="bg-surface-container-high text-primary-fixed px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase mb-8">
+                Sistema Interno · Escritórios de Advocacia
+            </span>
+<h1 class="font-headline font-bold text-5xl md:text-7xl text-on-surface tracking-tight max-w-4xl mb-8 leading-tight">
+                Gestão de contratos sem planilha, sem ruído.
+            </h1>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mb-12 leading-relaxed">
+                O Painel de Contratos centraliza o ciclo completo dos seus contratos — do cadastro à conclusão — com controle de acesso por perfil e rastreabilidade total.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 items-center">
+<button class="primary-gradient text-on-primary px-8 py-4 rounded-lg font-bold text-lg active:scale-95 transition-all">
+                    Solicitar Demonstração
+                </button>
+<button class="px-8 py-4 rounded-lg font-bold text-lg text-primary border border-outline-variant/20 hover:bg-white/5 transition-all">
+                    Conhecer funcionalidades
+                </button>
+</div>
+<div class="mt-32 signature-divider mx-auto"></div>
+</section>
+<!-- Problem Section -->
+<section class="py-32 px-8 max-w-screen-2xl mx-auto bg-surface-container-lowest">
+<div class="mb-20">
+<h2 class="font-headline font-semibold text-4xl text-on-surface mb-4">
+                    O que acontece sem um sistema centralizado
+                </h2>
+<p class="font-body text-on-surface-variant text-lg">
+                    Processos manuais geram retrabalho, perda de informação e risco jurídico.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container p-10 rounded-lg group hover:bg-surface-container-high transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-lg mb-8 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary-container" data-icon="folder_open">folder_open</span>
+</div>
+<h3 class="font-headline font-semibold text-xl text-on-surface mb-4">Contratos espalhados</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Arquivos fragmentados em e-mails, pastas locais e serviços de nuvem sem padronização.</p>
+</div>
+<div class="bg-surface-container p-10 rounded-lg group hover:bg-surface-container-high transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-lg mb-8 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary-container" data-icon="psychology">psychology</span>
+</div>
+<h3 class="font-headline font-semibold text-xl text-on-surface mb-4">Status gerenciado na memória</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Dependência total de profissionais específicos para saber em que etapa um documento se encontra.</p>
+</div>
+<div class="bg-surface-container p-10 rounded-lg group hover:bg-surface-container-high transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-lg mb-8 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary-container" data-icon="trending_down">trending_down</span>
+</div>
+<h3 class="font-headline font-semibold text-xl text-on-surface mb-4">Visibilidade financeira zero</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Dificuldade em consolidar valores e prazos de pagamento de múltiplos contratos ativos.</p>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-32 px-8 max-w-screen-2xl mx-auto" id="features">
+<div class="signature-divider mb-12"></div>
+<div class="mb-20">
+<h2 class="font-headline font-semibold text-4xl text-on-surface mb-4">
+                    Tudo que o escritório precisa, em um lugar
+                </h2>
+<p class="font-body text-on-surface-variant text-lg max-w-2xl">
+                    Uma plataforma técnica, porém intuitiva, desenhada para a rotina dinâmica de departamentos jurídicos.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="bg-surface-container-high p-12 rounded-lg flex gap-8 items-start">
+<div class="shrink-0 p-4 bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-primary scale-125" data-icon="note_add">note_add</span>
+</div>
+<div>
+<h3 class="font-headline font-semibold text-2xl text-on-surface mb-4">Cadastro e consulta centralizados</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">Busca avançada por palavras-chave, partes envolvidas ou datas de vigência em segundos.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-12 rounded-lg flex gap-8 items-start">
+<div class="shrink-0 p-4 bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-primary scale-125" data-icon="layers">layers</span>
+</div>
+<div>
+<h3 class="font-headline font-semibold text-2xl text-on-surface mb-4">Controle de status em tempo real</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">Workflow visual que permite identificar gargalos na esteira de aprovação instantaneamente.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-12 rounded-lg flex gap-8 items-start">
+<div class="shrink-0 p-4 bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-primary scale-125" data-icon="attach_file">attach_file</span>
+</div>
+<div>
+<h3 class="font-headline font-semibold text-2xl text-on-surface mb-4">Gestão de anexos integrada</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">Histórico completo de versões e documentos complementares vinculados a cada contrato.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-12 rounded-lg flex gap-8 items-start">
+<div class="shrink-0 p-4 bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-primary scale-125" data-icon="bar_chart_4_bars">bar_chart_4_bars</span>
+</div>
+<div>
+<h3 class="font-headline font-semibold text-2xl text-on-surface mb-4">Visão financeira agregada</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">Painéis analíticos com previsões de desembolso e alertas de renovação automática.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Permissions Section -->
+<section class="py-32 px-8 max-w-screen-2xl mx-auto bg-surface-container-lowest">
+<div class="text-center mb-24">
+<h2 class="font-headline font-semibold text-4xl text-on-surface mb-6">Controle de acesso por perfil</h2>
+<p class="font-body text-on-surface-variant text-xl">Dois níveis de permissão para separar operação de aprovação.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<!-- Editor Profile -->
+<div class="flex flex-col items-center">
+<div class="bg-surface-container-low p-12 rounded-lg w-full max-w-lg border border-outline-variant/5">
+<div class="flex justify-between items-center mb-10">
+<h3 class="font-headline font-bold text-2xl text-on-surface">Perfil Editor</h3>
+<span class="bg-primary-container/20 text-primary-fixed px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Operacional</span>
+</div>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span class="font-body text-on-surface-variant">Cadastro de novos contratos e aditivos</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span class="font-body text-on-surface-variant">Upload de minutas e documentação suporte</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span class="font-body text-on-surface-variant">Atualização de metadados e prazos</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Approver Profile -->
+<div class="flex flex-col items-center">
+<div class="bg-surface-container-low p-12 rounded-lg w-full max-w-lg border border-outline-variant/5">
+<div class="flex justify-between items-center mb-10">
+<h3 class="font-headline font-bold text-2xl text-on-surface">Perfil Aprovador</h3>
+<span class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Gestão</span>
+</div>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span class="font-body text-on-surface-variant">Validação final de conformidade jurídica</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span class="font-body text-on-surface-variant">Aprovação de fluxos financeiros críticos</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+<span class="font-body text-on-surface-variant">Visualização de relatórios de auditoria</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof Section -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-screen-md mx-auto flex flex-col items-center text-center">
+<div class="signature-divider mb-16"></div>
+<div class="relative">
+<span class="absolute -top-12 -left-12 text-9xl text-primary/10 select-none">“</span>
+<blockquote class="font-headline italic text-3xl md:text-4xl text-on-surface leading-tight relative z-10">
+                        Antes, eu precisava ligar para o assistente para saber o status de um contrato. Agora abro o painel e vejo tudo em 10 segundos.
+                    </blockquote>
+</div>
+<cite class="mt-12 font-body text-on-surface-variant not-italic text-lg">
+                    — Sócia responsável pela área comercial
+                </cite>
+</div>
+</section>
+<!-- CTA Final Section -->
+<section class="py-32 px-8 bg-surface-container-low" id="cta">
+<div class="max-w-screen-2xl mx-auto flex flex-col items-center">
+<div class="text-center mb-16">
+<h2 class="font-headline font-bold text-4xl md:text-5xl text-on-surface mb-6">Pronto para modernizar a gestão de contratos?</h2>
+<p class="font-body text-on-surface-variant text-xl max-w-2xl mx-auto">
+                        Preencha o formulário e nossa equipe entrará em contato para agendar uma demonstração personalizada.
+                    </p>
+</div>
+<form class="w-full max-w-lg space-y-6">
+<div class="space-y-2">
+<label class="block text-sm font-medium text-on-surface-variant ml-1">Nome completo</label>
+<input class="w-full bg-surface-container-lowest border-none border-b border-outline-variant/20 focus:border-primary focus:ring-0 text-on-surface py-4 px-4 transition-colors" placeholder="Seu nome" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-medium text-on-surface-variant ml-1">E-mail profissional</label>
+<input class="w-full bg-surface-container-lowest border-none border-b border-outline-variant/20 focus:border-primary focus:ring-0 text-on-surface py-4 px-4 transition-colors" placeholder="nome@escritorio.com.br" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-medium text-on-surface-variant ml-1">Nome do escritório</label>
+<input class="w-full bg-surface-container-lowest border-none border-b border-outline-variant/20 focus:border-primary focus:ring-0 text-on-surface py-4 px-4 transition-colors" placeholder="Nome do seu escritório" type="text"/>
+</div>
+<button class="w-full primary-gradient text-on-primary py-5 rounded-lg font-bold text-xl active:scale-95 transition-all mt-8">
+                        Solicitar Acesso
+                    </button>
+<p class="text-center text-sm text-on-surface-variant">
+                        Sem compromisso. Respondemos em até 1 dia útil.
+                    </p>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest py-12 border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-screen-2xl mx-auto space-y-6 md:space-y-0">
+<div class="font-label text-sm text-neutral-500 font-bold text-amber-400">
+                PAINEL DE CONTRATOS
+            </div>
+<div class="flex gap-8 font-label text-sm text-neutral-500">
+<a class="hover:text-amber-400 transition-colors" href="#">Termos</a>
+<a class="hover:text-amber-400 transition-colors" href="#">Privacidade</a>
+<a class="hover:text-amber-400 transition-colors" href="#">Compliance</a>
+</div>
+<div class="font-label text-sm text-neutral-500">
+                © 2024 PAINEL DE CONTRATOS. Todos os direitos reservados.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Painel de Contratos - Controle de Acesso</title>
+<!-- Google Fonts: Manrope & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#2a2a2a",
+              "inverse-primary": "#7e5700",
+              "tertiary": "#c9e6ff",
+              "primary": "#ffddaa",
+              "on-secondary-fixed": "#281900",
+              "tertiary-container": "#8ecdfd",
+              "secondary-container": "#8b6000",
+              "on-error-container": "#ffdad6",
+              "surface": "#131313",
+              "on-tertiary": "#00344e",
+              "on-error": "#690005",
+              "on-primary-fixed": "#281900",
+              "secondary-fixed": "#ffdeac",
+              "surface-variant": "#353534",
+              "outline": "#9c8f7d",
+              "on-tertiary-fixed-variant": "#004b70",
+              "on-primary": "#432c00",
+              "tertiary-fixed": "#cae6ff",
+              "on-secondary-container": "#ffe4bf",
+              "inverse-on-surface": "#313030",
+              "surface-bright": "#3a3939",
+              "surface-tint": "#f4bd5e",
+              "secondary": "#f5bd5e",
+              "error": "#ffb4ab",
+              "on-background": "#e5e2e1",
+              "tertiary-fixed-dim": "#8ecdfd",
+              "surface-dim": "#131313",
+              "on-primary-container": "#6e4c00",
+              "on-secondary": "#432c00",
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-surface": "#e5e2e1",
+              "primary-fixed-dim": "#f4bd5e",
+              "on-tertiary-container": "#005781",
+              "secondary-fixed-dim": "#f5bd5e",
+              "on-primary-fixed-variant": "#5f4100",
+              "surface-container-low": "#1c1b1b",
+              "error-container": "#93000a",
+              "primary-container": "#f4bd5e",
+              "outline-variant": "#4f4537",
+              "on-secondary-fixed-variant": "#604100",
+              "on-surface-variant": "#d3c4b1",
+              "surface-container-highest": "#353534",
+              "background": "#131313",
+              "surface-container": "#201f1f",
+              "primary-fixed": "#ffdeac",
+              "on-surface": "#e5e2e1",
+              "on-tertiary-fixed": "#001e2f"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .gold-gradient {
+        background: linear-gradient(135deg, #F4BD5E 0%, #B9882E 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full h-16 z-50 bg-neutral-900/75 backdrop-blur-xl border-b border-white/5 shadow-2xl shadow-black/50 font-['Manrope'] antialiased tracking-tight">
+<div class="flex items-center justify-between px-8 w-full max-w-screen-2xl mx-auto h-full">
+<div class="text-xl font-bold tracking-tighter text-amber-400 dark:text-amber-400 uppercase">
+                PAINEL DE CONTRATOS
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#">Visão Geral</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#">Arquivos</a>
+<a class="text-amber-400 font-semibold border-b-2 border-amber-400 pb-1" href="#">Segurança</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#">Suporte</a>
+</div>
+<button class="gold-gradient text-on-primary px-6 py-2 rounded font-semibold active:scale-95 transition-all duration-300">
+                Solicitar Acesso
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-screen-2xl mx-auto">
+<!-- Section Header -->
+<header class="mb-20">
+<div class="w-6 h-0.5 bg-primary mb-6"></div>
+<h1 class="text-5xl font-headline font-bold text-on-surface tracking-tighter mb-4">
+                Controle de acesso por perfil
+            </h1>
+<p class="text-on-surface-variant max-w-2xl text-lg leading-relaxed">
+                Gerencie as permissões e níveis de autoridade dentro do sistema. Defina quem pode editar minutas e quem possui o poder final de aprovação jurídica e financeira.
+            </p>
+</header>
+<!-- Permissions Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Perfil Editor Column -->
+<section class="bg-surface-container-low p-10 rounded shadow-sm relative overflow-hidden group">
+<!-- Tonal accent -->
+<div class="absolute top-0 left-0 w-1 h-full bg-outline-variant/20"></div>
+<div class="flex items-center justify-between mb-12">
+<h2 class="text-2xl font-headline font-semibold tracking-tight">Perfil Editor</h2>
+<span class="bg-surface-bright px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-widest text-on-surface-variant">
+                        Nível Operacional
+                    </span>
+</div>
+<div class="space-y-8">
+<div class="flex items-start gap-4 transition-all duration-300 hover:translate-x-1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-medium text-on-surface mb-1">Criação de novos contratos</p>
+<p class="text-sm text-on-surface-variant">Capacidade de iniciar minutas a partir de templates aprovados.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 transition-all duration-300 hover:translate-x-1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-medium text-on-surface mb-1">Edição de cláusulas variáveis</p>
+<p class="text-sm text-on-surface-variant">Ajuste de valores, prazos e qualificações das partes envolvidas.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 transition-all duration-300 hover:translate-x-1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-medium text-on-surface mb-1">Gestão de anexos e documentos</p>
+<p class="text-sm text-on-surface-variant">Upload e organização de documentação suporte para análise.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 transition-all duration-300 hover:translate-x-1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-medium text-on-surface mb-1">Visualização de histórico</p>
+<p class="text-sm text-on-surface-variant">Acesso total ao log de alterações e comentários internos.</p>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-white/5">
+<p class="text-xs text-on-surface-variant/60 italic">Última atualização: 24 de Outubro, 2024</p>
+</div>
+</section>
+<!-- Perfil Aprovador Column -->
+<section class="bg-surface-container-low p-10 rounded shadow-sm relative overflow-hidden group">
+<!-- Tonal accent -->
+<div class="absolute top-0 left-0 w-1 h-full bg-primary/40"></div>
+<div class="flex items-center justify-between mb-12">
+<h2 class="text-2xl font-headline font-semibold tracking-tight">Perfil Aprovador</h2>
+<span class="bg-primary/10 px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-widest text-primary">
+                        Nível Estratégico
+                    </span>
+</div>
+<div class="space-y-8">
+<div class="flex items-start gap-4 transition-all duration-300 hover:translate-x-1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-medium text-on-surface mb-1">Assinatura Digital Qualificada</p>
+<p class="text-sm text-on-surface-variant">Poder de formalização final com validade jurídica plena.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 transition-all duration-300 hover:translate-x-1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-medium text-on-surface mb-1">Aprovação de Alçadas Financeiras</p>
+<p class="text-sm text-on-surface-variant">Validação de contratos que excedam os limites operacionais.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 transition-all duration-300 hover:translate-x-1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-medium text-on-surface mb-1">Veto e Devolução de Minutas</p>
+<p class="text-sm text-on-surface-variant">Capacidade de interromper o fluxo e solicitar revisões críticas.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 transition-all duration-300 hover:translate-x-1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-medium text-on-surface mb-1">Configuração de Regras de Compliance</p>
+<p class="text-sm text-on-surface-variant">Definição dos parâmetros obrigatórios para segurança do negócio.</p>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-white/5 flex justify-between items-end">
+<p class="text-xs text-on-surface-variant/60 italic">Acesso Restrito à Diretoria</p>
+<div class="flex -space-x-3">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-low bg-surface-bright flex items-center justify-center text-[10px] font-bold">JS</div>
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-low bg-primary text-on-primary flex items-center justify-center text-[10px] font-bold">MT</div>
+</div>
+</div>
+</section>
+</div>
+<!-- System Architecture Visual -->
+<section class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-surface-container rounded border-b border-transparent hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant mb-4">shield_with_heart</span>
+<h3 class="font-headline font-semibold mb-2">Auditabilidade Total</h3>
+<p class="text-sm text-on-surface-variant">Cada clique e alteração é registrado em um log imutável de segurança.</p>
+</div>
+<div class="p-8 bg-surface-container rounded border-b border-transparent hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant mb-4">key</span>
+<h3 class="font-headline font-semibold mb-2">Multi-fator (MFA)</h3>
+<p class="text-sm text-on-surface-variant">Acesso exigido via token criptográfico para perfis de aprovação.</p>
+</div>
+<div class="p-8 bg-surface-container rounded border-b border-transparent hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant mb-4">account_tree</span>
+<h3 class="font-headline font-semibold mb-2">Hierarquia Dinâmica</h3>
+<p class="text-sm text-on-surface-variant">Os fluxos se adaptam automaticamente baseados no valor do contrato.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-white/5 bg-[#0E0E0E] font-['Inter'] text-sm text-neutral-500">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-screen-2xl mx-auto w-full">
+<div class="mb-6 md:mb-0">
+<div class="text-lg font-bold text-amber-400 mb-2">PAINEL DE CONTRATOS</div>
+<p>© 2024 PAINEL DE CONTRATOS. Todos os direitos reservados.</p>
+</div>
+<div class="flex items-center space-x-8">
+<a class="text-neutral-500 hover:text-amber-400 transition-colors opacity-80 hover:opacity-100" href="#">Termos</a>
+<a class="text-neutral-500 hover:text-amber-400 transition-colors opacity-80 hover:opacity-100" href="#">Privacidade</a>
+<a class="text-neutral-500 hover:text-amber-400 transition-colors opacity-80 hover:opacity-100" href="#">Compliance</a>
+</div>
+</div>
+</footer>
+</body></html>

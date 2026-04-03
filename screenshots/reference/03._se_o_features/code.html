@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#2a2a2a",
+              "inverse-primary": "#7e5700",
+              "tertiary": "#c9e6ff",
+              "primary": "#ffddaa",
+              "on-secondary-fixed": "#281900",
+              "tertiary-container": "#8ecdfd",
+              "secondary-container": "#8b6000",
+              "on-error-container": "#ffdad6",
+              "surface": "#131313",
+              "on-tertiary": "#00344e",
+              "on-error": "#690005",
+              "on-primary-fixed": "#281900",
+              "secondary-fixed": "#ffdeac",
+              "surface-variant": "#353534",
+              "outline": "#9c8f7d",
+              "on-tertiary-fixed-variant": "#004b70",
+              "on-primary": "#432c00",
+              "tertiary-fixed": "#cae6ff",
+              "on-secondary-container": "#ffe4bf",
+              "inverse-on-surface": "#313030",
+              "surface-bright": "#3a3939",
+              "surface-tint": "#f4bd5e",
+              "secondary": "#f5bd5e",
+              "error": "#ffb4ab",
+              "on-background": "#e5e2e1",
+              "tertiary-fixed-dim": "#8ecdfd",
+              "surface-dim": "#131313",
+              "on-primary-container": "#6e4c00",
+              "on-secondary": "#432c00",
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-surface": "#e5e2e1",
+              "primary-fixed-dim": "#f4bd5e",
+              "on-tertiary-container": "#005781",
+              "secondary-fixed-dim": "#f5bd5e",
+              "on-primary-fixed-variant": "#5f4100",
+              "surface-container-low": "#1c1b1b",
+              "error-container": "#93000a",
+              "primary-container": "#f4bd5e",
+              "outline-variant": "#4f4537",
+              "on-secondary-fixed-variant": "#604100",
+              "on-surface-variant": "#d3c4b1",
+              "surface-container-highest": "#353534",
+              "background": "#131313",
+              "surface-container": "#201f1f",
+              "primary-fixed": "#ffdeac",
+              "on-surface": "#e5e2e1",
+              "on-tertiary-fixed": "#001e2f"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .signature-divider {
+        width: 24px;
+        height: 2px;
+      }
+    </style>
+</head>
+<body class="bg-surface-container-lowest font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full h-16 z-50 bg-neutral-900/75 backdrop-blur-xl border-b border-white/5 shadow-2xl shadow-black/50">
+<div class="flex items-center justify-between px-8 w-full max-w-screen-2xl mx-auto h-full font-['Manrope'] antialiased tracking-tight">
+<div class="text-xl font-bold tracking-tighter text-amber-400 dark:text-amber-400">
+                PAINEL DE CONTRATOS
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-amber-400 font-semibold border-b-2 border-amber-400 pb-1" href="#">Visão Geral</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#">Arquivos</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#">Segurança</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors" href="#">Suporte</a>
+</div>
+<button class="bg-primary-container text-on-primary-fixed font-bold py-2 px-6 rounded hover:bg-white/5 active:scale-95 transition-all duration-300">
+                Solicitar Acesso
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Features Section -->
+<section class="max-w-screen-2xl mx-auto px-8">
+<!-- Signature Divider & Title -->
+<div class="mb-16">
+<div class="signature-divider bg-primary mb-6"></div>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface tracking-tight max-w-2xl">
+                    Tudo que o escritório precisa, em um lugar
+                </h2>
+</div>
+<!-- Bento-style Feature Grid (2x2 focus) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Feature Card 1: Centralized Registration -->
+<div class="group bg-surface-container-high p-10 rounded-lg hover:bg-surface-bright transition-colors duration-500 flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="inventory_2">inventory_2</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant font-medium">Módulo 01</span>
+</div>
+<h3 class="font-headline text-2xl font-semibold mb-4 text-on-surface">Cadastro Centralizado</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">
+                            Gestão unificada de entidades, partes e testemunhas em um repositório soberano com validação automática de dados.
+                        </p>
+</div>
+<div class="mt-8">
+<div class="h-1 w-0 group-hover:w-12 bg-primary transition-all duration-500"></div>
+</div>
+</div>
+<!-- Feature Card 2: Real-time Status -->
+<div class="group bg-surface-container-high p-10 rounded-lg hover:bg-surface-bright transition-colors duration-500 flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="analytics">analytics</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant font-medium">Módulo 02</span>
+</div>
+<h3 class="font-headline text-2xl font-semibold mb-4 text-on-surface">Status em Tempo Real</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">
+                            Monitoramento granular de cada etapa do fluxo contratual, desde a minuta inicial até a assinatura final digital.
+                        </p>
+</div>
+<div class="mt-8">
+<div class="h-1 w-0 group-hover:w-12 bg-primary transition-all duration-500"></div>
+</div>
+</div>
+<!-- Feature Card 3: Attachment Management -->
+<div class="group bg-surface-container-high p-10 rounded-lg hover:bg-surface-bright transition-colors duration-500 flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="folder_managed">folder_managed</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant font-medium">Módulo 03</span>
+</div>
+<h3 class="font-headline text-2xl font-semibold mb-4 text-on-surface">Gestão de Anexos</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">
+                            Protocolo de custódia digital para documentos complementares com versionamento imutável e criptografia de ponta.
+                        </p>
+</div>
+<div class="mt-8">
+<div class="h-1 w-0 group-hover:w-12 bg-primary transition-all duration-500"></div>
+</div>
+</div>
+<!-- Feature Card 4: Financial View -->
+<div class="group bg-surface-container-high p-10 rounded-lg hover:bg-surface-bright transition-colors duration-500 flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="mb-8 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant font-medium">Módulo 04</span>
+</div>
+<h3 class="font-headline text-2xl font-semibold mb-4 text-on-surface">Visão Financeira</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">
+                            Consolidado de valores, prazos de pagamento e fluxos de caixa atrelados a cada instrumento jurídico vigente.
+                        </p>
+</div>
+<div class="mt-8">
+<div class="h-1 w-0 group-hover:w-12 bg-primary transition-all duration-500"></div>
+</div>
+</div>
+</div>
+<!-- Contextual Decorative Section (Asymmetric Editorial Style) -->
+<div class="mt-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<div class="relative aspect-video overflow-hidden rounded-lg shadow-2xl">
+<img alt="Luxury corporate boardroom with dark wood and golden accent lighting" class="object-cover w-full h-full opacity-60 mix-blend-luminosity grayscale hover:grayscale-0 transition-all duration-700" data-alt="Interior of a luxury executive office at night, deep shadows with subtle golden ambient light hitting polished dark wood surfaces and glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb6kEEx1NWzN9qDrA0GPIlRDGqUMN6iWmDI0W2keaGjskRJwunC4A4djVJGswUvo4lw-HhZcOJIpSmINpVyWYDlz9-gFc5u8PXeA10PdmdQcgSdZkiWUeODkjw3nbn2zke7jAsmgaBOMhn4gW6Y0Uo4FkQiUJqThr_aWIkqgoUIPovsBV3uga0moDfR-AifaqJ24Y6xSPifDWa2ZmF0gMbRDks5XaToO-IBZaqx66kiYUbPFNrCimpKYZGO6WOfeGYbVdkLmXz1Zrb"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-8">
+<h4 class="font-headline text-2xl text-on-surface italic">A soberania dos seus dados em um cofre digital de alta performance.</h4>
+<p class="text-on-surface-variant font-body">
+                        Desenvolvido para departamentos jurídicos que não aceitam concessões entre agilidade e segurança. O Painel de Contratos utiliza uma arquitetura de camadas para garantir que cada transação seja auditável e permanente.
+                    </p>
+<div class="flex items-center gap-4 text-primary group cursor-pointer">
+<span class="text-sm font-semibold tracking-widest uppercase">Explorar Documentação</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="trending_flat">trending_flat</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-white/5 bg-[#0E0E0E]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-screen-2xl mx-auto font-['Inter'] text-sm text-neutral-500">
+<div class="mb-6 md:mb-0">
+<div class="text-lg font-bold text-amber-400 mb-2">PAINEL DE CONTRATOS</div>
+<div class="opacity-80">© 2024 PAINEL DE CONTRATOS. Todos os direitos reservados.</div>
+</div>
+<div class="flex space-x-8">
+<a class="text-neutral-500 hover:text-amber-400 transition-colors" href="#">Termos</a>
+<a class="text-neutral-500 hover:text-amber-400 transition-colors" href="#">Privacidade</a>
+<a class="text-neutral-500 hover:text-amber-400 transition-colors" href="#">Compliance</a>
+</div>
+</div>
+</footer>
+</body></html>

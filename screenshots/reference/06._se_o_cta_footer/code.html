@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PAINEL DE CONTRATOS - Modernização</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#2a2a2a",
+              "inverse-primary": "#7e5700",
+              "tertiary": "#c9e6ff",
+              "primary": "#ffddaa",
+              "on-secondary-fixed": "#281900",
+              "tertiary-container": "#8ecdfd",
+              "secondary-container": "#8b6000",
+              "on-error-container": "#ffdad6",
+              "surface": "#131313",
+              "on-tertiary": "#00344e",
+              "on-error": "#690005",
+              "on-primary-fixed": "#281900",
+              "secondary-fixed": "#ffdeac",
+              "surface-variant": "#353534",
+              "outline": "#9c8f7d",
+              "on-tertiary-fixed-variant": "#004b70",
+              "on-primary": "#432c00",
+              "tertiary-fixed": "#cae6ff",
+              "on-secondary-container": "#ffe4bf",
+              "inverse-on-surface": "#313030",
+              "surface-bright": "#3a3939",
+              "surface-tint": "#f4bd5e",
+              "secondary": "#f5bd5e",
+              "error": "#ffb4ab",
+              "on-background": "#e5e2e1",
+              "tertiary-fixed-dim": "#8ecdfd",
+              "surface-dim": "#131313",
+              "on-primary-container": "#6e4c00",
+              "on-secondary": "#432c00",
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-surface": "#e5e2e1",
+              "primary-fixed-dim": "#f4bd5e",
+              "on-tertiary-container": "#005781",
+              "secondary-fixed-dim": "#f5bd5e",
+              "on-primary-fixed-variant": "#5f4100",
+              "surface-container-low": "#1c1b1b",
+              "error-container": "#93000a",
+              "primary-fixed": "#ffdeac",
+              "on-surface": "#e5e2e1",
+              "on-tertiary-fixed": "#001e2f",
+              "outline-variant": "#4f4537"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .signature-divider {
+            width: 24px;
+            height: 2px;
+            background-color: #f4bd5e;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #f4bd5e 0%, #b9882e 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest font-body text-on-surface antialiased">
+<!-- Top Navigation Anchor -->
+<nav class="fixed top-0 w-full h-16 z-50 bg-neutral-900/75 backdrop-blur-xl border-b border-white/5 shadow-2xl shadow-black/50">
+<div class="flex items-center justify-between px-8 w-full max-w-screen-2xl mx-auto h-full">
+<div class="text-xl font-bold tracking-tighter text-amber-400 dark:text-amber-400 font-headline">
+                PAINEL DE CONTRATOS
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors font-['Manrope'] antialiased tracking-tight" href="#">Visão Geral</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors font-['Manrope'] antialiased tracking-tight" href="#">Arquivos</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors font-['Manrope'] antialiased tracking-tight" href="#">Segurança</a>
+<a class="text-neutral-400 hover:text-neutral-200 transition-colors font-['Manrope'] antialiased tracking-tight" href="#">Suporte</a>
+<button class="ml-4 gold-gradient text-on-primary px-5 py-2 rounded-lg font-semibold active:scale-95 transition-transform">
+                    Solicitar Acesso
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Final CTA Section: The Sovereign Archive Aesthetic -->
+<section class="bg-surface-container-low py-32 px-8 relative overflow-hidden">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-start gap-24">
+<!-- Editorial Branding Column -->
+<div class="w-full md:w-1/2">
+<div class="signature-divider mb-8"></div>
+<h2 class="font-headline text-5xl md:text-6xl font-bold tracking-tight text-on-surface leading-[1.1] mb-8 max-w-xl">
+                        Pronto para modernizar a gestão de contratos?
+                    </h2>
+<p class="text-on-surface-variant text-lg max-w-md leading-relaxed">
+                        Acesse a infraestrutura definitiva para escritórios de alta performance. Segurança, rastro e inteligência em um único cofre digital.
+                    </p>
+<div class="mt-16 flex items-center gap-6">
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-2 border-surface-container-low bg-surface-container" title="User Alpha">
+<img class="w-full h-full object-cover rounded-full" data-alt="close-up portrait of professional male executive with serious confident expression in dark studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq7d3PmRlsyiPXfK6IIBXLuUAHWiKqdkzNF0OWoICBf9LZqfnLKeEnhoSWMDcWCFfmGto7s3PWWPTz1_3noHtl8xwab5OOG2r_e6LtYl4kH-qwz9pW1Yg1bk7bBDkWBLLRev5xYSldYZIY41b2KCaF0TqPc6gCex9dIMT_ZBMt60lAU1zNtTCsA9hWpJ02jOj0Bgtj0W3Uq4uhvV7gxgaizVfsYJcrYset8HRz2ZhcWW62VROknJJGjkI8nLlVxMy-D13Q_rxbm6no"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface-container-low bg-surface-container" title="User Beta">
+<img class="w-full h-full object-cover rounded-full" data-alt="professional woman in corporate attire smiling confidently with soft directional light against a dark minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtX4u3G4WCn6AiSGUETBmZ5Slf1V-aqp8vlY7jCdag_E4OhIplkkwSl2DThAqBExHKXH8h5e4-FA71amsewuQ_9xHJcM4S0an6a-H-yaaqcxAIHoh67rLASWOyQWIMxFAd_FoX-zNOVnLj6Dbqqz5_Mk66GAUNEdJQf5NCMlP2ssTCV7SqyYkRTag67LTsFmbLXfx4hJXveFxDwmCwt9pJF1TctlusxThLthZU6AQ-_m5f8Y7jsPhm3xyMRUkg5V95q1NKm0jFA8Np"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface-container-low bg-surface-container flex items-center justify-center text-xs font-bold text-primary">
+                                +500
+                            </div>
+</div>
+<span class="text-sm text-on-surface-variant font-medium uppercase tracking-widest">Escritórios Confiam</span>
+</div>
+</div>
+<!-- Focused Task Column: Form -->
+<div class="w-full md:w-1/2 max-w-lg">
+<div class="bg-surface-container p-10 md:p-12 rounded-xl shadow-2xl relative">
+<form action="#" class="space-y-10">
+<div class="group">
+<label class="block text-xs font-medium text-on-surface-variant uppercase tracking-widest mb-2 group-focus-within:text-primary transition-colors" for="full_name">
+                                    Nome completo
+                                </label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/20 focus:border-primary focus:ring-0 text-on-surface py-3 px-0 placeholder:text-surface-bright transition-all" id="full_name" name="full_name" placeholder="Ex: Rodrigo Silva" type="text"/>
+</div>
+<div class="group">
+<label class="block text-xs font-medium text-on-surface-variant uppercase tracking-widest mb-2 group-focus-within:text-primary transition-colors" for="email">
+                                    E-mail profissional
+                                </label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/20 focus:border-primary focus:ring-0 text-on-surface py-3 px-0 placeholder:text-surface-bright transition-all" id="email" name="email" placeholder="rodrigo@escritorio.com.br" type="email"/>
+</div>
+<div class="group">
+<label class="block text-xs font-medium text-on-surface-variant uppercase tracking-widest mb-2 group-focus-within:text-primary transition-colors" for="office_name">
+                                    Nome do escritório
+                                </label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/20 focus:border-primary focus:ring-0 text-on-surface py-3 px-0 placeholder:text-surface-bright transition-all" id="office_name" name="office_name" placeholder="Ex: Advocacia Silva &amp; Associados" type="text"/>
+</div>
+<div class="pt-6">
+<button class="w-full gold-gradient text-on-primary py-5 rounded-lg font-headline font-bold text-sm uppercase tracking-widest active:scale-[0.98] transition-all flex items-center justify-center gap-3" type="submit">
+                                    Agendar Demonstração 
+                                    <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<p class="text-center text-[10px] text-on-surface-variant mt-6 uppercase tracking-tighter opacity-60">
+                                    Ao enviar, você concorda com nossos termos de privacidade e compliance.
+                                </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Atmospheric Background Element -->
+<div class="absolute -right-24 bottom-0 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[400px]" style="font-variation-settings: 'wght' 100;">verified_user</span>
+</div>
+</section>
+</main>
+<!-- Footer: The Anchor Point -->
+<footer class="bg-[#0E0E0E] w-full py-12 border-t border-white/5 font-['Inter'] text-sm text-neutral-500">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-screen-2xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="text-lg font-bold text-amber-400 font-headline">PAINEL DE CONTRATOS</div>
+<p class="opacity-80 hover:opacity-100 transition-opacity">© 2024 PAINEL DE CONTRATOS. Todos os direitos reservados.</p>
+</div>
+<nav class="flex items-center gap-12">
+<a class="text-neutral-500 hover:text-amber-400 transition-colors uppercase tracking-widest text-[10px] font-bold" href="#">Termos</a>
+<a class="text-neutral-500 hover:text-amber-400 transition-colors uppercase tracking-widest text-[10px] font-bold" href="#">Privacidade</a>
+<a class="text-neutral-500 hover:text-amber-400 transition-colors uppercase tracking-widest text-[10px] font-bold" href="#">Compliance</a>
+</nav>
+<div class="flex items-center gap-6">
+<a class="text-neutral-500 hover:text-amber-400 transition-colors opacity-80 hover:opacity-100" href="#">
+<span class="material-symbols-outlined text-xl">account_balance</span>
+</a>
+<a class="text-neutral-500 hover:text-amber-400 transition-colors opacity-80 hover:opacity-100" href="#">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">security</span>
+</a>
+<a class="text-neutral-500 hover:text-amber-400 transition-colors opacity-80 hover:opacity-100" href="#">
+<span class="material-symbols-outlined text-xl">language</span>
+</a>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto px-8 mt-12">
+<div class="h-px bg-white/5 w-full"></div>
+<div class="flex justify-center mt-8">
+<p class="text-[10px] text-neutral-700 uppercase tracking-[0.2em] text-center">
+                    Infraestrutura de alta fidelidade para o ecossistema jurídico brasileiro.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

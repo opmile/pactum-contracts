@@ -175,10 +175,10 @@ export function DashboardPreview() {
                   <div className="h-64 w-full relative pb-8">
                     {/* Grid lines */}
                     <div className="absolute inset-0 flex flex-col justify-between opacity-10">
-                      <div className="w-full h-px bg-white" />
-                      <div className="w-full h-px bg-white" />
-                      <div className="w-full h-px bg-white" />
-                      <div className="w-full h-px bg-white" />
+                      <div className="w-full h-px bg-on-surface/10" />
+                      <div className="w-full h-px bg-on-surface/10" />
+                      <div className="w-full h-px bg-on-surface/10" />
+                      <div className="w-full h-px bg-on-surface/10" />
                     </div>
                     {/* Chart SVG */}
                     <svg className="absolute inset-0 h-full w-full" preserveAspectRatio="none">
